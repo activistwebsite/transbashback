@@ -53,3 +53,12 @@
       top: 56%; 
       transform: translateX(-60%) rotate(-7deg); 
     }
+    
+    .imageBox { 
+      top: 70%;
+      background-color: transparent;
+      box-shadow: 0 0 0px rgba(0, 0, 0, 0.3);
+      width: 80%;
+      height: auto;
+    }
+

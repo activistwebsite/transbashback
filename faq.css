@@ -41,7 +41,7 @@
   border-left: 8px solid magenta;
   transform: rotate(-2deg);
   box-shadow: 4px 4px 0 black;
-  font-size: 1.2em;
+font-size: clamp(18px, 3vw, 32px);
   text-shadow: 1px 1px black;
   width: fit-content;
   max-width: 90%;
@@ -53,7 +53,7 @@
   border-right: 8px solid black;
   transform: rotate(1.5deg);
   box-shadow: -4px 4px 0 black;
-  font-size: 1.1em;
+font-size: clamp(18px, 3vw, 32px);
   margin-left: auto;
   width: fit-content;
   max-width: 85%;

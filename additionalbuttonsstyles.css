@@ -7,3 +7,16 @@
   position: relative;
 }
 
+.fixed-bottom-logo {
+  position: fixed;
+  margin-bottom: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 25vw;
+  height: auto;
+  z-index: 999;
+  filter: drop-shadow(2px 2px 0 black);
+  pointer-events: none; /* Prevents it from blocking clicks */
+}
+
+
