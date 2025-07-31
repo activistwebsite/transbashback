@@ -1,0 +1,55 @@
+
+    .text-box {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      color: black;
+      padding: min(1.8vh, 1.8vw) min(3vh, 3vw); /* Responsive padding using min() */
+      font-family: 'Gill Sans Extra Bold Display', sans-serif;
+      font-weight: 900; /* Extra Bold */
+      text-transform: uppercase;
+      font-size: 4vh; /* Font size scales with both container height and width */
+      white-space: nowrap;
+      background-color: magenta;
+      box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
+      border-radius: 2px;
+      text-shadow:
+        1.5px 1.5px 1.5px rgba(0, 0, 0, 1),
+        -1.5px -1.5px 1.5px rgba(0, 0, 0, 1),
+        1.5px -1.5px 1.5px rgba(0, 0, 0, 1),
+        -1.5px 1.5px 1.5px rgba(0, 0, 0, 1);
+      letter-spacing: min(0.5vh, 0.5vw); /* Responsive letter spacing */
+    }
+    .text-box::before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: magenta;
+      filter: blur(1px);
+      z-index: -1;
+      border-radius: 10px;
+    }
+    /* Fixed positioning using percentage of container height */
+    .box1 { 
+      top: 8%; 
+      transform: translateX(-55%) rotate(-10deg); 
+    }
+    .box2 { 
+      top: 20%; 
+      transform: translateX(-30%) rotate(5deg); 
+    }
+    .box3 { 
+      top: 32%; 
+      transform: translateX(-40%) rotate(-2deg); 
+    }
+    .box4 { 
+      top: 44%; 
+      transform: translateX(-48%) rotate(8deg); 
+    }
+    .box5 { 
+      top: 56%; 
+      transform: translateX(-60%) rotate(-7deg); 
+    }

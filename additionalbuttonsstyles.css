@@ -1,0 +1,9 @@
+.poster-logo {
+  display: block;
+  margin: 6vh auto 2vh auto;
+  max-width: 60%;
+  height: auto;
+  filter: drop-shadow(2px 2px 0 black);
+  position: relative;
+}
+

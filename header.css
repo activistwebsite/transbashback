@@ -1,0 +1,113 @@
+@import url('https://fonts.cdnfonts.com/css/gill-sans-extra-bold-display');
+
+.site-header {
+  color: magenta;
+  font-family: 'Gill Sans Extra Bold Display', 'Gill Sans Nova Cond Ultra Bold', sans-serif;
+  text-transform: uppercase;
+  background-image: url('./darkblackpaper.jpeg'); /* optional texture */
+  background-size: stretch;
+  margin: 0;
+  padding: 0;
+}
+.header-top {
+  position: relative;
+  padding: min(2vh, 2vw);
+  height: min(10vh, 10vw); /* Adjust as needed */
+}
+
+.header-logo {
+  width: auto; /* was 7vh/vw */
+  height: 90%;
+  position: absolute;
+  left: min(2vw, 2vh);
+  top: 50%;
+  transform: translateY(-50%);
+  filter: drop-shadow(0 0 2px magenta);
+}
+
+
+.header-title {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: min(6vh, 6vw);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: min(0.4vh, 0.4vw);
+  text-shadow:
+    1.5px 1.5px 1.5px rgba(0, 0, 0, 1),
+    -1.5px -1.5px 1.5px rgba(0, 0, 0, 1),
+    1.5px -1.5px 1.5px rgba(0, 0, 0, 1),
+    -1.5px 1.5px 1.5px rgba(0, 0, 0, 1);
+}
+
+.instagram-btn {
+  color: magenta;
+  text-decoration: none;
+  font-size: min(5vh, 5vw);
+  font-weight: 900;
+  letter-spacing: min(0.3vh, 0.3vw);
+  text-shadow:
+    1px 1px 1px black,
+    -1px -1px 1px black;
+}
+
+.instagram-btn:hover {
+  text-decoration: underline;
+}
+
+.main-nav {
+  background-color: magenta;
+  padding: min(1vh, 1vw);
+  text-align: center; /* ✅ This centers the content */
+}
+
+.main-nav a {
+  display: inline-block; /* ✅ Inline-block makes centering work with text-align */
+  margin: 0 min(1.5vh, 1.5vw);
+  color: black;
+  text-decoration: none;
+  font-size: min(4vh, 4vw);
+  font-weight: 900;
+  letter-spacing: min(0.3vh, 0.3vw);
+  text-transform: uppercase;
+  text-shadow:
+    1px 1px 1px magenta,
+    -1px -1px 1px magenta;
+}
+
+.main-nav a:hover {
+  text-decoration: underline;
+}
+
+.instagram-icon-link {
+  display: inline-flex;
+  align-items: center;
+  margin-left: min(1.5vh, 1.5vw);
+}
+
+.instagram-icon {
+  display: inline-block;
+  height: 1.1em;
+  vertical-align: -0.2em;
+  filter: drop-shadow(0 0 0 black) drop-shadow(0 0 0.5px black) drop-shadow(0 0 0.5px black);
+}
+
+.instagram-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Optional: responsive fallback */
+@media (max-width: 600px) {
+  .header-top {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .main-nav a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
+
