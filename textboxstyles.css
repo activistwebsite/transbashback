@@ -1,3 +1,9 @@
+@font-face {
+  font-family: 'Gill Sans Std Extra Bold Display';
+  src: url('./gill-sans-std-extra-bold-display.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
 
     .text-box {
       position: absolute;
@@ -10,7 +16,7 @@
       text-transform: uppercase;
       font-size: 4vh; /* Font size scales with both container height and width */
       white-space: nowrap;
-      background-color: magenta;
+      background-color: RGBA(253, 61, 181, 1);
       box-shadow: 0 0 10px rgba(255, 0, 255, 0.3);
       border-radius: 2px;
       text-shadow:
@@ -27,7 +33,7 @@
       left: 0;
       right: 0;
       bottom: 0;
-      background-color: magenta;
+      background-color: RGBA(253, 61, 181, 1);
       filter: blur(1px);
       z-index: -1;
       border-radius: 10px;

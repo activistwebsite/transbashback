@@ -1,8 +1,13 @@
-@import url('https://fonts.cdnfonts.com/css/gill-sans-extra-bold-display');
+@font-face {
+  font-family: 'Gill Sans Std Extra Bold Display';
+  src: url('./gill-sans-std-extra-bold-display.otf') format('opentype');
+  font-weight: 800;
+  font-style: normal;
+}
 
 .site-header {
   color: magenta;
-  font-family: 'Gill Sans Extra Bold Display', 'Gill Sans Nova Cond Ultra Bold', sans-serif;
+  font-family: 'Gill Sans Extra Bold Display', sans-serif;
   text-transform: uppercase;
   background-image: url('./darkblackpaper.jpeg'); /* optional texture */
   background-size: stretch;
@@ -31,7 +36,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  font-size: min(6vh, 6vw);
+  font-size: 4em;
   font-weight: 900;
   text-transform: uppercase;
   letter-spacing: min(0.4vh, 0.4vw);
@@ -58,7 +63,7 @@
 }
 
 .main-nav {
-  background-color: magenta;
+  background-color: RGBA(253, 61, 181, 1);
   padding: min(1vh, 1vw);
   text-align: center; /* ✅ This centers the content */
 }
