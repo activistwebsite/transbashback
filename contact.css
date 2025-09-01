@@ -1,0 +1,114 @@
+.contact-header {
+  text-align: center;
+  font-size: 5em;
+  font-weight: 900;
+  color: #ff2ebd;
+  letter-spacing: 2px;
+  margin-top: 0.5em;
+  margin-bottom: 0.7em;
+  border-bottom: 4px solid #ff2ebd;
+  padding: 0 1em 0.2em 1em;
+  background: rgba(0,0,0,0.85);
+  border-radius: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
+.contact-socials {
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  margin-bottom: 2em;
+  margin-top: 1em;
+}
+
+.contact-socials .icon {
+  width: 72px;
+  height: 72px;
+  border: 3px solid #ff2ebd;
+  border-radius: 16px;
+  background: #fff; /* Light background for contrast */
+  padding: 10px;
+  box-sizing: border-box;
+  transition: border-color 0.2s, transform 0.2s, background 0.2s;
+  box-shadow: 0 2px 8px rgba(253, 61, 181, 0.15);
+  filter: none; /* Remove pink filter for clarity */
+}
+
+.contact-socials .icon-link:hover .icon {
+  border-color: #ff2ebd;
+  background: #ff2ebd;
+  transform: scale(1.12);
+}
+.contact-email {
+  text-align: center;
+  font-size: 1.7em;
+  font-weight: 700;
+  color: #ff2ebd;
+  background: rgba(0,0,0,0.85);
+  border-radius: 8px;
+  padding: 0.5em 1em 1.2em 1em;
+  margin: 0 auto 2em auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #ff2ebd;
+  letter-spacing: 1px;
+  user-select: text;
+  max-width: 480px;
+  box-shadow: 0 4px 24px rgba(253, 61, 181, 0.12);
+}
+
+.contact-email .email-address {
+  color: #fff;
+  background: none;
+  font-family: monospace, monospace;
+  padding-left: 0.5em;
+  user-select: text;
+}
+
+.contact-email > div:first-child {
+  margin-bottom: 1em;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-email-buttons {
+  display: flex;
+  gap: 2em;
+  justify-content: center;
+  width: 100%;
+  margin-top: 1em;
+}
+
+
+.contact-btn {
+  background: #ff2ebd;
+  color: #000;
+  font-weight: 900;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4em 1.2em; /* smaller vertical and horizontal padding */
+  font-size: 1em;        /* smaller font size */
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  letter-spacing: 1px;
+  box-shadow: 0 2px 12px rgba(253, 61, 181, 0.18);
+  outline: none;
+  margin-bottom: 0.2em;
+  min-width: 110px;      /* ensures buttons are still wide enough */
+}
+
+.contact-btn:active {
+  background: #d026a2;
+  color: #fff;
+}
+
+.contact-btn.copied {
+  background: #2effbd;
+  color: #000;
+  box-shadow: 0 2px 12px rgba(46, 255, 189, 0.18);
+}

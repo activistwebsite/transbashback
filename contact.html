@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/x-icon" href="./favicon.ico">
+  <title>BASH BACK</title>
+  <!-- External Stylesheet -->
+  <link href="https://fonts.cdnfonts.com/css/gill-sans-nova-cond-ultra-bold" rel="stylesheet" />
+  
+  <!-- Internal Stylesheets -->
+  <link href="./generalstyles.css" rel="stylesheet" />
+  <link href="./additionalbuttonsstyles.css" rel="stylesheet" />
+  <link href="./textboxstyles.css" rel="stylesheet" />
+  <link href="./header.css" rel="stylesheet" />
+  <link href="./contact.css" rel="stylesheet" />
+</head>
+<body>
+<!-- header.html -->
+<div class="site-header">
+  <div class="header-top">
+    <img src="./favicon.ico" alt="Logo" class="header-logo" />
+    <span class="header-title">BASH BACK</span>
+  </div>
+
+  <nav class="main-nav">
+    <a href="index.html">home</a>
+    <a href="manifesto.html">manifesto</a>
+    <a href="faq.html">FAQ</a>
+    <a href="mailto:bashbackinfo@proton.me">contact</a>
+    <a href="https://drive.proton.me/urls/44SANFA2KR#szpIyPH6Kywq">media</a>
+    <a href="https://www.instagram.com/transbashback/" target="_blank" class="icon-link" aria-label="Instagram">
+      <img src="./instagram.svg" alt="Instagram logo" class="icon" />
+    </a>
+    <a href="https://bsky.app/profile/bashback.bsky.social" target="_blank" class="icon-link" aria-label="Bluesky">
+      <img src="./bluesky.svg" alt="Bluesky logo" class="icon" />
+    </a>
+    <a href="https://x.com/transbashback" target="_blank" class="icon-link" aria-label="Twitter">
+      <img src="./twitter.svg" alt="Twitter logo" class="icon" />
+    </a>
+  </nav>
+</div>
+
+  <h1 class="contact-header">Contact Us</h1>
+  <div class="contact-socials">
+    <a href="https://www.instagram.com/transbashback/" target="_blank" class="icon-link" aria-label="Instagram">
+      <img src="./instagram.svg" alt="Instagram logo" class="icon" />
+    </a>
+    <a href="https://bsky.app/profile/bashback.bsky.social" target="_blank" class="icon-link" aria-label="Bluesky">
+      <img src="./bluesky.svg" alt="Bluesky logo" class="icon" />
+    </a>
+    <a href="https://x.com/transbashback" target="_blank" class="icon-link" aria-label="Twitter">
+      <img src="./twitter.svg" alt="Twitter logo" class="icon" />
+    </a>
+  </div>
+
+  <div class="contact-email">
+    <div>
+      <span class="email-label">Email:</span>
+      <span class="email-address" id="email-text">bashbackinfo@proton.me</span>
+    </div>
+    <div class="contact-email-buttons">
+      <button class="contact-btn" id="copy-btn" type="button">Copy</button>
+      <button class="contact-btn" id="email-btn" type="button">Email App</button>
+    </div>
+  </div>
+
+</body>
+
+
+<script>
+  document.getElementById('copy-btn').onclick = function() {
+    navigator.clipboard.writeText(document.getElementById('email-text').textContent);
+    const btn = this;
+    btn.textContent = "Copied!";
+    btn.classList.add("copied");
+    // Do not reset button text or style after clicking
+  };
+  document.getElementById('email-btn').onclick = function() {
+    window.location.href = "mailto:bashbackinfo@proton.me";
+  };
+</script>
+</html>
