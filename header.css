@@ -27,9 +27,7 @@
   left: min(2vw, 2vh);
   top: 50%;
   transform: translateY(-50%);
-  filter: drop-shadow(0 0 2px magenta);
 }
-
 
 .header-title {
   position: absolute;
